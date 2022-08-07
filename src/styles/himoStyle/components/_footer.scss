@@ -1,0 +1,50 @@
+.footer {
+  background-color: $classicBlack;
+  color: white;
+  z-index: 99999;
+  border: 0 1px 0 0;
+  padding: $base-padding * 3 $base-padding * 2;
+  margin-top: $base-padding * 3;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: start;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .title {
+    font-size: $font-size-xxl;
+    font-weight: 700;
+  }
+  .footer-email {
+    padding-top: 0;
+    font-size: $font-size-xl;
+    font-weight: 500;
+    @include md {
+      padding-top: 1em;
+    }
+  }
+  .content-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  .socialmedia-items {
+  }
+
+  .copyright {
+    font-size: $font-size-sm;
+    font-weight: 300;
+    align-self: end;
+  }
+}
+
+.socialmedia-items {
+  .socialmedia-item {
+    font-size: $font-size-sm;
+    font-weight: 300;
+  }
+}

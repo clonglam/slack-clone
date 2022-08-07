@@ -1,0 +1,42 @@
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  z-index: 99999;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+  .logo {
+    flex-grow: 1;
+  }
+  .nav-items {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .item-container {
+    border: 1px solid $classicWhite;
+    background-color: $classicWhite;
+    padding: 10px 20px;
+    color: black;
+    font-size: small;
+    text-align: center;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      background-color: $classicBlack;
+      color: $classicWhite;
+    }
+  }
+  .active {
+    font-weight: bold;
+    background-color: $classicBlack;
+    color: $classicWhite;
+  }
+}
